@@ -2,30 +2,156 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>Научиться учиться</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Первая практическая работа Михаила Бутырского на Яндекс Практикуме">
+  <meta name="keywords" content="обучение, Фейнман, Кауфман">
+  <meta name="author" content="Бутырский Михаил">
 </head>
-<body>
-  <div class="page">
-    <header class="header">
-
-    </header>
-    <main class="content">
-      <section class="description">
-      </section>
-
-      <section class="digits">
-      </section>
-
-      <section class="feynman">
-      </section>
-
-      <section class="kaufman">
-      </section>
-    </main>
-    <footer class="footer">
-
-    </footer>
-  </div>
+<body class="page">
+  <header class="header">
+    <div class="logo logo_place_header"></div>
+    <h1 class="header__title text_weight_sb text_fontsize_xxl text_lineheight_xxl">Научиться Учиться</h1>
+    <h2 class="header__subtitle text_fontsize_s text_lineheight_s" >Какие современные и эффективные подходы к обучению вы
+      можете использовать в своей жизни?<a class="link_decoration_none text_color_blue" href="#"> Узнать →</a></h2>
+    <img class="header__main-illustration" src="images/header-image.png" alt="Picture with a student">
+    <div class="header__square-pic"></div>
+  </header>
+  <main>
+    <section class="description">
+      <div class="two-columns">
+        <h2 class="two-columns__brief text_color_blue text_fontsize_s text_lineheight_rel_m">Главные проблемы в обучении</h2>
+        <div class="two-columns__main-text">
+          <p class="two-columns__paragraph text_fontsize_m text_lineheight_l">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал.
+            Мы готовимся к экзаменам и учим билеты.
+              Мы тренируемся решать однообразные задачи. чтобы лучше сдать тест, но частов итоге это не дает нам реального знания.
+              Зубрежка быстро выветривается и не приносит пользы.</p>
+          <p class="two-columns__paragraph two-columns__paragraph-center text_fontsize_m text_lineheight_l"><span class="two-columns__span-accent text_weight_sb">Вывод: </span>учиться тоже нужно уметь,
+            но почему-то этому мало где учат. Что с этим делать?</p>
+          <p class="two-columns__paragraph text_fontsize_m text_lineheight_l">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим.
+              Эти же техники применяются на примере обучения в Практикуме.</p>
+        </div>
+      </div>
+    </section>
+    <section class="digits">
+      <h2 class="section-title text_align_center text_weight_sb text_fontsize_xl text_lineheight_rel_s">Цифры и факты</h2>
+      <h3 class="section-subtitle text_align_center text_fontsize_m text_lineheight_l">Про учёбу и мозг</h3>
+      <ul class="table">
+        <li class="table__cell">
+          <h4 class="table__heading text_weight_sb text_fontsize_m text_lineheight_rel_s">86 миллиардов</h4>
+          <p class="text_fontsize_s text_lineheight_rel_m">Число нейронов в мозге человека</p>
+        </li>
+        <li class="table__cell">
+          <h4 class="table__heading text_weight_sb text_fontsize_m text_lineheight_rel_s">2,1 миллиарда</h4>
+          <p class="text_fontsize_s text_lineheight_rel_m">Число нуждающихся в повышении квалификации</p>
+          <p class="table__text-second-line text_fontsize_s text_lineheight_rel_m">Всемирный Банк, 2017</p>
+        </li>
+        <li class="table__cell">
+          <h4 class="table__heading text_weight_sb text_fontsize_m text_lineheight_rel_s">1000 терабайт</h4>
+          <p class="text_fontsize_s text_lineheight_rel_m">Объём памяти человека</p>
+        </li>
+        <li class="table__cell">
+          <h4 class="table__heading text_weight_sb text_fontsize_m text_lineheight_rel_s">500 триллионов</h4>
+          <p class="text_fontsize_s text_lineheight_rel_m">Число ответственных за обучение нервных синапсов у взрослого человека</p>
+        </li>
+        <li class="table__cell">
+          <h4 class="table__heading text_weight_sb text_fontsize_m text_lineheight_rel_s">420 миллионов</h4>
+          <p class="text_fontsize_s text_lineheight_rel_m">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+          <p class="table__text-second-line text_fontsize_s text_lineheight_rel_m">Всемирный Банк, 2017</p>
+        </li>
+        <li class="table__cell">
+          <h4 class="table__heading text_weight_sb text_fontsize_m text_lineheight_rel_s">17-20 лет</h4>
+          <p class="text_fontsize_s text_lineheight_rel_m">Пик обучаемости</p>
+        </li>
+        <li class="table__cell">
+          <h4 class="table__heading text_weight_sb text_fontsize_m text_lineheight_rel_s">1885 год</h4>
+          <p class="text_fontsize_s text_lineheight_rel_m">Открытие кривой забывания</p>
+        </li>
+        <li class="table__cell">
+          <h4 class="table__heading text_weight_sb text_fontsize_m text_lineheight_rel_s">1889 год</h4>
+          <p class="text_fontsize_s text_lineheight_rel_m">Открытие условного рефлекса</p>
+        </li>
+      </ul>
+    </section>
+    <section class="feynman">
+      <h2 class="feynman__title text_align_center text_weight_sb text_fontsize_xxxl text_lineheight_rel_s">Метод Фейнмана</h2>
+      <h3 class="feynman__subtitle text_align_center text_fontsize_l text_lineheight_xl">Выучить и не забыть.</h3>
+      <a class="feynman__link link_decoration_none text_color_blue text_fontsize_l text_lineheight_xl" href="#">Подробнее →</a>
+      <img class="feynman__image" src="images/feynman.png" alt="Picture of Feynman">
+    </section>
+    <section class="kaufman">
+      <h2 class="section-title section-title-theme-dark text_align_center text_weight_sb text_color_white text_fontsize_xl text_lineheight_rel_s">Принципы обучения</h2>
+      <h3 class="section-subtitle section-subtitle-theme-dark text_align_center text_color_white text_fontsize_m text_lineheight_l">от Джоша Кауфмана</h3>
+      <ol class="table table-theme-dark">
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">1</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Выберите привлекательный проект.</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">2</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Сосредоточьтесь на каком-то одном навыке.</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">3</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Определите целевой уровень мастерства.</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">4</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Разбейте навык на элементы.</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">5</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Приготовьте все необходимое для занятий.</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">6</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Устраните препятствия для занятий.</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">7</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Выделите специальное время для занятий</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">8</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Создайте быстрые петли обратной связи</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">9</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Занимайтесь по расписанию, короткими интенсивными интервалами</p>
+          </li>
+          <li class="table__cell table__cell-theme-dark">
+            <h4 class="table__heading table__heading-theme-dark text_weight_sb text_color_white text_fontsize_m text_lineheight_rel_s">10</h4>
+            <p class="table__text table__text-theme-dark text_color_white text_fontsize_s text_lineheight_rel_m">Уделяйте вниманием количеству и скорости</p>
+          </li>
+      </ol>
+      <img class="kaufman__triangle" src="images/kaufman-triangle.svg" alt="Triangle">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__columns">
+      <div class="footer__column footer__column_content_copyright">
+        <div class="logo logo_place_footer"></div>
+        <p class="footer_author text_color_white text_fontsize_s text_lineheight_s">&copy 2019. Виктор Абанькин</p>
+      </div>
+      <div class="footer__column footer__column_content_info">
+        <h2 class="footer__column-heading text_color_white text_fontsize_s text_lineheight_m">О Практикуме</h2>
+        <div class="footer__column-links">
+          <a class="link_decoration_none text_color_white text_fontsize_s text_lineheight_m" href="#">Главная</a>
+          <a class="link_decoration_none text_color_white text_fontsize_s text_lineheight_m" href="#">Концепции</a>
+          <a class="link_decoration_none text_color_white text_fontsize_s text_lineheight_m" href="#">Наставники</a>
+        </div>
+      </div>
+      <div class="footer__column footer__column_content_social">
+        <h2 class="footer__column-heading text_color_white text_fontsize_s text_lineheight_m">Соцсети</h2>
+        <div class="footer__column-links">
+          <a class="link_decoration_none text_color_white text_fontsize_s text_lineheight_m" href="#"><img src="images/facebook_color_white.svg" alt="FB Logo" class="footer__social-icon">Facebook</a>
+          <a class="link_decoration_none text_color_white text_fontsize_s text_lineheight_m" href="#"><img src="images/vk_color_white.svg" alt="VK Logo" class="footer__social-icon">ВКонтакте</a>
+          <a class="link_decoration_none text_color_white text_fontsize_s text_lineheight_m" href="#"><img src="images/instagram_color_white.svg" alt="Inst Logo" class="footer__social-icon">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

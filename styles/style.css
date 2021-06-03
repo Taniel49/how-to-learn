@@ -1,31 +1,348 @@
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+.page{
+    min-width: 1100px;
+    max-width: 1600px;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
+.header{
+    position: relative;
+    min-height: 600px;
+    max-height: 756px;
+    background-color:#f2f2f2;
+    display: flex;
+    height:100vh;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.logo{
+    background-image: url("../images/logo_place_header.svg");
+    height: 32px;
+    width: 183px;
+    z-index: 3;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.logo_place_header{
+    position: absolute;
+    top: 30px;
+    left: 64px;
 }
+
+.header__title{
+    width: 730px;
+    margin: 0;
+    align-self: center;
+    margin-left: 64px;
+    z-index: 2;
+}
+
+.header__subtitle{
+    width: 388px;
+    margin: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    z-index: 2;
+}
+
+.header__main-illustration{
+    height: 608px;
+    width: 756px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header__square-pic{
+    background-color: #2f80ed;
+    height: 568px;
+    width: 568px;
+    position: absolute;
+    right:0;
+    top:64px;
+    z-index: 0.4;
+}
+
+.description{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.two-columns{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+}
+
+.two-columns__brief{
+    margin:0;
+    width:175px;
+}
+
+.two-columns__main-text{
+    width: 80%;
+    min-width: 784px
+}
+
+.two-columns__paragraph{
+    margin:0;
+}
+
+.two-columns__paragraph-center{
+    margin: 30px 0;
+}
+
+.two-columns__span-accent{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title{
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+.section-subtitle{
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+.table{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    list-style: none;
+}
+
+.table__cell{
+    width:250px;
+    margin-top: 60px;
+}
+
+.table__heading{
+    margin:0 0 20px;
+}
+
+.table__text-second-line{
+    margin-top: 20px;
+}
+
+.feynman {
+    min-height: 890px;
+    background-color:#f2f2f2;
+    position: relative;
+    z-index: -2;
+}
+
+.feynman__title{
+    padding-top: 100px;
+    margin:0 auto;
+    width:648px;
+}
+
+.feynman__subtitle{
+    margin:70px auto;
+}
+
+.feynman__image{
+    height:637px;
+    width: 867px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.feynman__link{
+    position: absolute;
+    top:50%;
+    right:48px;
+}
+
+.kaufman{
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+}
+
+.section-title-theme-dark{
+    padding-top: 90px;
+    margin: 0 auto;
+    width:60%;
+}
+
+.section-subtitle-theme-dark{
+    margin:20px auto 0;
+    width:60%;
+}
+
+.table-theme-dark{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 90px;
+    list-style: none;
+}
+
+.table__cell-theme-dark{
+    width:200px;
+    margin-top: 80px;
+}
+
+.table__heading-theme-dark{
+    margin:0 0 20px;
+}
+
+.table__text-theme-dark{
+    margin:0;
+}
+
+.kaufman__triangle{
+    position: absolute;
+    top:0;
+    right:-210px;
+    width:877px;
+    height: 877px;
+    z-index:-1 ;
+}
+
+.footer{
+    min-height: 350px;
+    padding-top:60px;
+    padding-bottom: 40px;
+    background-color: #1f1f1f;
+}
+
+.footer__columns{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer__column_content_copyright{
+    flex-basis: 711px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_author{
+    margin:18px 0;
+}
+
+.footer__column_content_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column_content_social{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column-links{
+    display: flex;
+    flex-direction: column;
+    margin:20px 0 18px;
+}
+
+.footer__social-icon{
+    margin-right:10px;
+    width: 16px;
+    height: 16px;
+}
+
+.footer__column-heading{
+    margin:0;
+}
+
+.logo_place_footer{
+    background-image: url("../images/logo_place_footer.svg");
+    width:183px;
+    height: 35px;
+}
+
+.text_align_center {
+      text-align: center;
+    }
+
+.text_weight_sb{
+      font-weight: 700;
+    }
+
+.link_decoration_none{
+      text-decoration: none;
+    }
+
+.text_color_blue{
+      color: #2f80ed;
+    }
+
+.text_color_white{
+      color: white;
+    }
+
+.text_fontsize_s{
+      font-size: 18px;
+    }
+
+.text_fontsize_m{
+      font-size: 24px;
+    }
+
+.text_fontsize_l{
+      font-size: 36px;
+    }
+
+.text_fontsize_xl{
+      font-size: 60px;
+    }
+
+.text_fontsize_xxl{
+      font-size: 102px;
+    }
+
+.text_fontsize_xxxl{
+      font-size: 120px;
+    }
+
+.text_lineheight_s{
+      line-height: 25px;
+    }
+
+.text_lineheight_m{
+      line-height: 30px;
+    }
+
+.text_lineheight_l{
+      line-height: 34px;
+    }
+
+.text_lineheight_xl{
+      line-height: 51px;
+    }
+
+.text_lineheight_xxl{
+      line-height: 96px;
+    }
+
+.text_lineheight_rel_s{
+      line-height: 1.15;
+    }
+
+.text_lineheight_rel_m{
+      line-height: 1.2;
+    }
