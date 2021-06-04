@@ -90,7 +90,7 @@
     width:175px;
     line-height:1.2;
     font-size: 18px;
-    color:#2f80ed
+    color:#2f80ed;
 }
 
 .two-columns__main-text{
@@ -272,7 +272,7 @@
     padding-top:60px;
     padding-bottom: 40px;
     background-color: #1f1f1f;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .footer__columns{
