@@ -60,6 +60,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -1;
 }
 
 .header__square-pic{
@@ -69,7 +70,7 @@
     position: absolute;
     right:0;
     top:64px;
-    z-index: -1;
+    z-index: -2;
 }
 
 .description{
@@ -91,6 +92,7 @@
     line-height:1.2;
     font-size: 18px;
     color:#2f80ed;
+    font-weight: 400;
 }
 
 .two-columns__main-text{
@@ -99,13 +101,13 @@
 }
 
 .two-columns__paragraph{
-    margin:0;
+    margin: 0 0 30px;
     line-height:34px;
     font-size: 24px;
 }
 
-.two-columns__paragraph:nth-child(2){
-    margin: 30px 0;
+.two-columns__paragraph:last-child{
+    margin: 0;
 }
 
 .two-columns__span-accent{
@@ -113,7 +115,7 @@
 }
 
 .digits{
-  margin-bottom: 100px;
+    margin-bottom: 100px;
 }
 .section-title{
     margin: 0 auto;
@@ -125,7 +127,7 @@
 }
 
 .section-subtitle{
-    margin: 20px auto;
+    margin: 20px auto 0;
     max-width:60%;
     line-height:34px;
     font-size: 24px;
@@ -148,7 +150,7 @@
 }
 
 .table__heading{
-    margin:0 0 20px;
+    margin:0;
     line-height:1.15;
     font-size: 24px;
     font-weight: 700;
@@ -157,12 +159,11 @@
 .table__text{
     line-height:1.2;
     font-size: 18px;
+    margin:20px 0;
 }
 
-.table__text-second-line{
-    margin-top: 20px;
-    line-height:1.2;
-    font-size: 18px;
+.table__text:last-child{
+  margin-bottom: 0;
 }
 
 .feynman {
@@ -215,6 +216,7 @@
     position: relative;
     z-index: 1;
     padding-top: 90px;
+    padding-bottom: 90px;
     box-sizing: border-box;
 }
 
@@ -222,7 +224,6 @@
     margin: 0 auto;
     width:60%;
     color:white;
-    padding-bottom: 90px;
 }
 
 .section-subtitle_theme_dark{
@@ -232,14 +233,7 @@
 }
 
 .table_theme_dark{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 1100px;
-    margin-top:0;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
+
 }
 
 .table__cell_theme_dark{
@@ -264,6 +258,7 @@
     height: 877px;
     background-image: url(../images/kaufman-triangle.svg);
     z-index: -1;
+    background-size: cover;
 }
 
 .footer{
@@ -283,8 +278,7 @@
 }
 
 .footer__column{
-    font-size:18px;
-    color:white;
+
 }
 
 .footer__column_content_copyright{
@@ -297,6 +291,8 @@
 .footer__author{
     margin:18px 0;
     line-height:25px;
+    font-size:18px;
+    color:white;
 }
 
 .footer__column_content_info{
@@ -334,6 +330,8 @@
     margin:0;
     line-height:25px;
     font-weight: 700;
+    font-size:18px;
+    color:white;
 }
 
 .logo_place_footer{
